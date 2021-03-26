@@ -8,7 +8,11 @@
   float: left;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 30%;
+  width: 25%;
+  margin-left: 50px;
+}
+.cards img{
+  margin-left: 40px;
 }
 .container{
   display: inline-flexbox;
@@ -18,6 +22,9 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 40%;
+}
+.price{
+  color:rgb(214, 19, 19);
 }
 .add-to-cart{
   background-color: #4CAF50; /* Green */
