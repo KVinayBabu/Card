@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import React from 'react';
+import "./App.css";
+const products = [
+  { id: "1", title: "Mobile", price: "$199", Url: "./mobile.jpg" },
+  { id: "2", title: "Laptop", price: "$499", Url: "./Laptop.jpg" },
+  { id: "3", title: "Tablet", price: "$249", Url: "./Ipad.jpg" }]
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+      <h1>
+        Shopping Cards
+      </h1>
+      {products.map((items) => {
+            return (
+        <div className="container" key={items.id}>
+          <div className="cards">
+            <img src={items.Url} alt="img" />
+            <h1>{items.title}</h1>
+            <p>Price:{items.price}</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      );
+    })
+  }
     </div>
-  );
+    );
+  }
 }
 
 export default App;
