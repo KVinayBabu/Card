@@ -2,20 +2,18 @@
   text-align: center;
 }
 .cards{
-  width: 30%;
   margin: 1%;
   padding: 5px;
   float: left;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 25%;
-  margin-left: 50px;
-}
-.cards img{
-  margin-left: 40px;
+  width: 20%;
+  margin-left: 20px;
 }
 .container{
-  display: inline-flexbox;
+  display: flexbox;
+  flex-direction: column;
+  flex-wrap: wrap;
   
 }
 .card {
